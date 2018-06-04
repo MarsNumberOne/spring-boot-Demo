@@ -1,0 +1,22 @@
+1.核心注解
+	@RestController //通过web方式访问RestController
+
+2.配置注解
+	//使用配置
+	 @Value("${age}")
+	//注入
+	@Component
+	//配置文件的属性 自动装配到类中
+	@ConfigurationProperties(prefix = "girl")
+3.Controller注解
+	@Controller //处理http请求
+	@RestController 需要@ResponseBody 配合@Controller
+	@RequestMapping 配置url映射
+	@PathVariable 获取url中的数据
+	@RequestParam 获取请求参数的直
+	@GetMapping 组合注解
+2.启动方式
+	idea方式启动
+	mvn spring-boot:run
+	//--spring.profiles.active=prod  启动加载具体某个配置文件
+	java -jar 项目jar包 --spring.profiles.active=prod
