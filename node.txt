@@ -20,3 +20,5 @@
 	mvn spring-boot:run
 	//--spring.profiles.active=prod  启动加载具体某个配置文件
 	java -jar 项目jar包 --spring.profiles.active=prod
+
+3.
