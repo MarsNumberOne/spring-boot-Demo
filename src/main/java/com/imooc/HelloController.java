@@ -35,4 +35,9 @@ public class HelloController {
         //,required = false 不是必须穿的 defaultValue 默认值
         return "Hello:" + myId;
     }
+
+    @GetMapping(value = "/test1")
+    public String testGit(){
+        return "test git";
+    }
 }
